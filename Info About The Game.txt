@@ -1,0 +1,14 @@
+This game is a basic template that includes: 
+Attack System
+Movement Between 'Rooms'
+Enemies
+Items
+Consumables
+Use Constumables System
+Inventory System
+
+But there is so much more that could be added to the game.
+If you actually read this, and you make additions to the game's
+code, please email the full code:
+wizardzombie1987@gmail.com
+I would love to see what and how you have done things.
