@@ -1,1 +1,3 @@
-# Basically a load of Python scripts I think people might find interesting or useful. Some of the programs are not mine, but full credits are given to the original creators (If I could find them). If you created one of these programs and I have not left credit, please tell me. I will fix it immediately.
+ An RPG game I made in Python. It's easy to modify and is free to use, but please don't pass it off as your own. I worked very hard on this. 
+     - Tinsel Ninja
+        AKA WizardZombie
