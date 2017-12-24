@@ -43,7 +43,7 @@ def showStatus():
     #Check if there is an 'enemy' in the room
     if 'enemy' in rooms[currentRoom]:
         print('You see a ' + rooms[currentRoom]['enemy'])
-    if 'armour_cheatplate' in rooms[currentRoom]:
+    if 'armour_chestplate' in rooms[currentRoom]:
         print('You see a ' + rooms[currentRoom]['armour_chestplate'] + ' Chestplate!')
     print('================')
 
@@ -80,7 +80,7 @@ rooms = {
           'left' : 1,
           'back' : 4,
           'item' : 'grasscutter',
-          'item' : 'ebon chesplate'},
+          'armour_chestplate' : 'ebon'},
 
     3 : { 'name' : 'Main Kitchen',
           'right' : 4,
@@ -88,7 +88,8 @@ rooms = {
           'enemy' : 'waiyida'},
 
     4 : { 'name' : ' Bathroom',
-          'up' : 5},
+          'up' : 5,
+          'right' : 1},
 
     5 : { 'name' : 'Attic',
           'down' : 4,
@@ -115,13 +116,14 @@ rooms = {
           'enemy' : 'waiyida',
           'item' : 'battlescythe' },
 
-    9 : { 'name' : 'other Bathroom',
+    9 : { 'name' : 'Second Story Bathroom',
           'enemy' : 'fieryspite',
           'item' : 'potion',
           'backward' : 8 },
 
     10 : { 'name' : 'Spare Room',
-          'right' : 8 },
+          'right' : 8,
+           'item'},
 
     11 : { 'name' : 'Guest Bedroom',
           'forward' : 8 },
@@ -171,4 +173,12 @@ while True:
             del rooms[currentRoom]['enemy']
         else:
             print("Can't see " +move[1] + "!")
+
+    if move[0] == 'use':
+        if 'item' in inventory:
+            if 'item' == 'potion':
+                useConsumable()
+                del inventory['potion']
+            else:
+                print("Can't use this!")
 
